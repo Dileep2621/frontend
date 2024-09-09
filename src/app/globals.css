@@ -1,0 +1,116 @@
+.search {
+  position: relative;
+  padding: 10px;
+}
+
+.custom-element {
+  width: 241px;
+  height: 38px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.custom-element:focus,
+.custom-element:active {
+  border-color: #7952b3;
+  box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+  outline: none;
+}
+
+.custom-element:disabled {
+  background-color: rgb(233, 236, 239);
+  border-color: rgb(206, 212, 218);
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-element.filled {
+  background-color: #e6ffe6;
+  border-color: #28a745;
+}
+
+.keyboard-shortcut {
+  position: absolute;
+  font-size: 12px;
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 2px;
+  height: 24px;
+  padding: 0 4px;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-sizing: border-box;
+  top: 23%;
+  right: 7%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid rgb(222, 226, 230);
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+  background-color: #f8f9fa;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: 1px solid rgb(222, 226, 230);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table {
+  padding: 10px;
+}
+
+.limit-input {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.limit-toggle {
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: border-color 0.3s,
+    box-shadow 0.3s;
+  width: 50px;
+}
+
+.error-limit {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+}
